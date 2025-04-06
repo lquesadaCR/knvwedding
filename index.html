@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>La boda de Valerie & Kenneth</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="font-secondary text-white mb-n2">Valerie <span class="text-primary">&</span> Kenneth</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Inicio</a>
+                <a href="#bienvenida" class="nav-item nav-link">Bienvenida</a>
+                <a href="#event" class="nav-item nav-link">Evento</a>
+                <a href="#gallery" class="nav-item nav-link">Galería</a>
+                <a href="#dresscode" class="nav-item nav-link">vestimenta</a>
+            </div>
+            <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                <h1 class="font-secondary text-white mb-n2">Valerie <span class="text-primary">&</span> Kenneth</h1>
+                <div id="countdown" class="text-white small text-center"></div>
+            </a>
+            <div class="navbar-nav mr-auto py-0">
+                
+                <a href="#schedule" class="nav-item nav-link">Cronograma</a>
+                <a href="#transport" class="nav-item nav-link">Microbús</a>
+                <a href="#rsvp" class="nav-item nav-link">Confirmación</a>
+                <a href="#contact" class="nav-item nav-link">Contacto</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 pb-5" id="home">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/Portada1.jpg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <p class="masthead-subheading font-weight-light mb-4" style="font-size: 1rem;">24 de mayo, 2025</p>
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Valerie & Kenneth</h1>
+                            
+                            <div id="countdown" class="mb-4">
+                                <h2 class="text-white font-weight-light mb-0" style="font-size: 2rem;">
+                                    Falta <span id="days"></span>d <span id="hours"></span>h <span id="minutes"></span>m <span id="seconds"></span>s
+                                </h2>
+                            </div>
+                            
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">NOS VAMOS A CASAR</h3>
+                            </div>
+                            <button type="button" class="btn-play mx-auto" data-toggle="modal"
+                                data-src="https://www.youtube.com/embed/jfRj8CqoaxM?si=FJlWfhBxSnbdgSNV" data-target="#videoModal">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/Portada2.jpg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <p class="masthead-subheading font-weight-light mb-4" style="font-size: 1rem;">24 de mayo, 2025</p>
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Valerie & Kenneth</h1>
+                            
+                            <div id="countdown" class="mb-4">
+                                <h2 class="text-white font-weight-light mb-0" style="font-size: 2rem;">
+                                    Falta <span id="days2"></span>d <span id="hours2"></span>h <span id="minutes2"></span>m <span id="seconds2"></span>s
+                                </h2>
+                            </div>
+                            
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">NOS VAMOS A CASAR</h3>
+                            </div>
+                            <button type="button" class="btn-play mx-auto" data-toggle="modal"
+                                data-src="https://www.youtube.com/embed/jfRj8CqoaxM?si=FJlWfhBxSnbdgSNV" data-target="#videoModal">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-prev-icon mt-3"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#header-carousel" data-slide="next">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-next-icon mt-3"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+     <!-- Bienvenida -->
+    <section id="bienvenida" class="container-fluid py-5" style="background-color: #fffaf8;">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-4">Bienvenida</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <p class="font-weight-light mb-4">📜 Un mensaje especial para los invitados:</p>
+                    <blockquote class="blockquote font-italic px-4" style="border-left: 0.25rem solid #f3d1bf;">
+                        “¡Bienvenidos! Nuestro viaje juntos apenas comienza, y queremos que sean parte del primer capítulo.
+                        Aquí encontrarán toda la información sobre nuestro gran día. ¡Nos emociona celebrar con ustedes!”
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Start -->
+    <section id="event" class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-4">Detalles del Evento</h1>
+                <i class="far fa-calendar-alt text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <p class="mb-3">📅 <strong>Fecha:</strong> Sábado, 24 de mayo de 2025</p>
+                    <p class="mb-3">⏰ <strong>Hora:</strong> 9:30 a.m.</p>
+                    <p class="mb-3">📍 <strong>Lugar:</strong> Finca Mi Refugio, Guarco de Cartago</p>
+                    <p class="font-italic">"Toda la boda se llevará a cabo en el mismo lugar, así que prepárense para una celebración inolvidable."</p>
+                    <div class="mt-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.3743723834424!2d-83.91043512416243!3d9.809439390244525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fa447c6f5dc5%3A0xf6c98f09f02b7c56!2sFinca%20Mi%20Refugio!5e0!3m2!1ses-419!2scr!4v1712345678901!5m2!1ses-419!2scr" width="100%" height="450" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <!-- Event End -->
+
+    <!-- Gallery Start -->
+    <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
+        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Sesión de fotos</h6>
+            <h1 class="font-secondary display-4 text-white">Nuestra Galería</h1>
+            <i class="far fa-heart text-white"></i>
+        </div>
+        <div class="owl-carousel gallery-carousel">
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-1.jpg" alt="">
+                <a href="img/gallery-1.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-2.jpg" alt="">
+                <a href="img/gallery-2.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="">
+                <a href="img/gallery-3.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-4.jpg" alt="">
+                <a href="img/gallery-4.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-5.jpg" alt="">
+                <a href="img/gallery-5.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-6.jpg" alt="">
+                <a href="img/gallery-6.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery End -->
+
+    <!-- Sección Código de Vestimenta -->
+    <section id="dresscode" class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-4">Código de Vestimenta</h1>
+                <i class="fas fa-tshirt text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <p class="mb-3">👗 <strong>Etiqueta:</strong> Hombres con traje, mujeres con vestido largo.</p>
+                    <p class="font-italic">"Queremos que luzcan espectaculares y disfruten de esta noche especial con nosotros."</p>
+                    <p class="mt-4"><strong>🔹 Recomendaciones:</strong></p>
+                    <ul class="list-unstyled">
+                        <li>• Para celebrar y bailar toda la noche, se recomienda llevar zapatos cómodos. 💃🕺</li>
+                        <li>• La finca puede ser fresca en la noche, así que llevar un abrigo es una buena idea. 🧥❄️</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Sección Cronograma del Evento -->
+        <section id="schedule" class="container-fluid py-5" style="background-color: #fffaf8;">
+            <div class="container py-5">
+                <div class="section-title position-relative text-center">
+                    <h1 class="font-secondary display-4">Cronograma del Evento</h1>
+                    <i class="far fa-clock text-dark"></i>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <p class="font-weight-light mb-4">⏳ Horarios aproximados para que los invitados sepan qué esperar:</p>
+                        <ul class="list-unstyled">
+                            <li>• 9:30 a.m. – Ceremonia</li>
+                            <li>• 11:00 a.m. – Brindis y cóctel</li>
+                            <li>• 12:30 p.m. – Almuerzo y celebración</li>
+                            <li>• Tarde/Noche – Fiesta y baile 🎉</li>
+                        </ul>
+                        <p class="font-italic mt-4">"Prepárense para disfrutar de una celebración llena de amor, alegría y mucha diversión."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- Sección Transporte en Microbús -->
+    <section id="transport" class="container-fluid py-5" >
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-4">Servicio de Microbús</h1>
+                <i class="fas fa-shuttle-van text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <p>🚐 Para quienes prefieran no manejar, ofrecemos transporte ida y vuelta.</p>
+                    <p>📍 <strong>Lugar de salida:</strong> Costado este del Teatro Nacional</p>
+                    <p>🕘 <strong>Hora de salida:</strong> 8:00 a.m.</p>
+                    <p>🕛 <strong>Hora de regreso:</strong> 3:00 p.m. o 7:00 p.m. (especificar a qué hora deseas regresar)</p>
+                    <p class="font-italic mt-4">"Si deseas reservar tu espacio en el microbús, por favor indícalo al confirmar tu asistencia."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- RSVP Start -->
+
+    <section id="rsvp" class="container-fluid py-5" style="background-color: #fffaf8;">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-4">Confirmación de Asistencia</h1>
+                <i class="far fa-check-circle text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="text-center">Fecha límite para confirmar: <strong>24 de abril</strong></p>
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label>¿Asistirás?</label><br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="asistencia" id="si" value="Sí" required>
+                                <label class="form-check-label" for="si">✅ Asistiré</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="asistencia" id="no" value="No">
+                                <label class="form-check-label" for="no">❌ No podré asistir</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="restricciones">🍽️ Restricciones alimentarias</label>
+                            <input type="text" class="form-control" id="restricciones" placeholder="Indica si tienes alguna">
+                        </div>
+                        <div class="form-group">
+                            <label for="microbus">🚌 ¿Necesitás servicio de microbús?</label>
+                            <select class="form-control" id="microbus" required>
+                                <option value="">Seleccionar...</option>
+                                <option value="Sí">Sí</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary px-4">Enviar confirmación</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- RSVP End -->
+    <div id="rsvp-status" class="text-center mt-3" style="display: none;">
+        <div id="rsvp-loader" class="spinner-border text-primary" role="status">
+          <span class="sr-only">Enviando...</span>
+        </div>
+        <div id="rsvp-message" class="mt-2"></div>
+      </div>
+      
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-5" id="contact" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-3 text-white">Gracias!</h1>
+                <i class="far fa-heart text-white"></i>
+            </div>
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="d-flex justify-content-center py-2">
+                <p class="text-white" href="#">info@example.com</p>
+                <span class="px-3">|</span>
+                <p class="text-white" href="#">+012 345 6789</p>
+            </div>
+            <p class="m-0">&copy; <a class="text-primary" href="#">Domain Name</a>. Designed by <a class="text-primary" href="https://htmlcodex.com">HTML Codex</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-4x fa-angle-down text-white scroll-to-bottom" style="cursor: pointer;"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Scroll suave al hacer clic en la flecha
+        document.querySelector('.scroll-to-bottom').addEventListener('click', function () {
+          document.getElementById('bienvenida').scrollIntoView({ behavior: 'smooth' });
+        });
+      
+        // Cuenta regresiva
+        const weddingDate = new Date("2025-05-24T09:30:00").getTime();
+      
+        const countdown = () => {
+          const now = new Date().getTime();
+          const distance = weddingDate - now;
+      
+          if (distance < 0) {
+            document.getElementById("countdown").innerHTML = "¡Ya comenzó el gran día!";
+            clearInterval(intervalId);
+            return;
+          }
+      
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+          // Lista de IDs para actualizar
+          const fields = ["days", "hours", "minutes", "seconds", "days2", "hours2", "minutes2", "seconds2"];
+          fields.forEach(id => {
+            if (id.includes("days")) document.getElementById(id).textContent = days;
+            else if (id.includes("hours")) document.getElementById(id).textContent = hours;
+            else if (id.includes("minutes")) document.getElementById(id).textContent = minutes;
+            else if (id.includes("seconds")) document.getElementById(id).textContent = seconds;
+          });
+      
+          document.getElementById("countdown").textContent = 
+            `Faltan ${days}d ${hours}h ${minutes}m ${seconds}s`;
+        };
+      
+        const intervalId = setInterval(countdown, 1000);
+        countdown(); // Llamar una vez inmediatamente
+    </script>  
+
+    <script>
+    document.querySelector('form').addEventListener('submit', function (e) {
+      e.preventDefault();
+  
+      const status = document.getElementById('rsvp-status');
+      const loader = document.getElementById('rsvp-loader');
+      const message = document.getElementById('rsvp-message');
+  
+      status.style.display = 'block';
+      loader.style.display = 'inline-block';
+      message.textContent = '';
+  
+      const nombre = document.getElementById('nombre').value;
+      const asistencia = document.querySelector('input[name="asistencia"]:checked')?.value || '';
+      const restricciones = document.getElementById('restricciones').value;
+      const microbus = document.getElementById('microbus').value;
+  
+      const data = {
+        nombre,
+        asistencia,
+        restricciones,
+        microbus
+      };
+  
+      fetch('https://script.google.com/macros/s/AKfycbwS1LlmBP5tb50_BaCqXsjv6cF7VTysQzeUWZ58U54f-smvzTf2bbY1BBSqbp1fI1vsiQ/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        body: JSON.stringify(data),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+        })
+        .then(() => {
+        loader.style.display = 'none';
+        message.textContent = '¡Gracias por confirmar tu asistencia!';
+        message.classList.remove('text-danger');
+        message.classList.add('text-success');
+        e.target.reset();
+        })
+        .catch(error => {
+        loader.style.display = 'none';
+        message.textContent = 'Hubo un error de conexión.';
+        message.classList.remove('text-success');
+        message.classList.add('text-danger');
+        console.error('Error:', error);
+        });
+    });
+    </script>
+    <script>
+        document.getElementById('microbus').addEventListener('input', function () {
+            if (this.value === '') {
+                this.setCustomValidity('Por favor seleccioná una opción');
+            } else {
+                this.setCustomValidity('');
+            }
+        });
+    </script>
+         
+</body>
+
+</html>
