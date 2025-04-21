@@ -176,18 +176,16 @@
                     <p class="mb-3">⏰ <strong>Hora:</strong> 9:30 a.m.</p>
                     <p class="mb-3">📍 <strong>Lugar:</strong> Finca Mi Refugio, Guarco de Cartago</p>
                     <p class="font-italic">"Toda la boda se llevará a cabo en el mismo lugar, así que prepárense para una celebración inolvidable."</p>
-                    <div class="mt-4">
+                    <div class="embed-responsive embed-responsive-16by9">
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.2597436049775!2d-83.9257354!3d9.7442451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa12364400ececd%3A0x63fe2fcefa7d7bd!2sMi%20Refugio%20Hortensias%20y%20Eucaliptos!5e0!3m2!1ses-419!2scr!4v1713717838367!5m2!1ses-419!2scr" 
-                            width="600" 
-                            height="450" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
+                            class="embed-responsive-item"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.2597436049775!2d-83.9257354!3d9.7442451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa12364400ececd%3A0x63fe2fcefa7d7bd!2sMi%20Refugio%20Hortensias%20y%20Eucaliptos!5e0!3m2!1ses-419!2scr!4v1713717838367!5m2!1ses-419!2scr"
+                            allowfullscreen=""
+                            loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
-
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -347,6 +345,14 @@
                                 <option value="No">No</option>
                             </select>
                         </div>
+                        <div class="form-group" style="display: none;">
+                            <label for="horarioBuseta">🕛 ¿A qué hora deseás regresar en la microbus?</label>
+                            <select class="form-control" id="horarioBuseta" name="horarioBuseta">
+                                <option value="">Seleccioná una opción</option>
+                                <option value="3pm">3:00 p.m.</option>
+                                <option value="7pm">7:00 p.m.</option>
+                            </select>
+                        </div> 
                         <div class="text-center">
                             <button type="submit" class="btn btn-primary px-4">Enviar confirmación</button>
                         </div>
@@ -371,19 +377,24 @@
                 <h1 class="font-secondary display-3 text-white">Gracias!</h1>
                 <i class="far fa-heart text-white"></i>
             </div>
-            <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+            <div class="d-flex justify-content-center py-2">
+                <p class="text-white">
+                    <a href="mailto:vdqv240@gmail.com" class="text-white">vdqv240@gmail.com</a>
+                </p>
+                <span class="px-3">|</span>
+                <p class="text-white">
+                    <a href="https://wa.me/50685187400" target="_blank" class="text-white">+506 8518 7400</a>
+                </p>
             </div>
             <div class="d-flex justify-content-center py-2">
-                <p class="text-white" href="#">info@example.com</p>
+                <p class="text-white">
+                    <a href="mailto:Kenneth.proxy@gmail.com" class="text-white">Kenneth.proxy@gmail.com</a>
+                </p>
                 <span class="px-3">|</span>
-                <p class="text-white" href="#">+012 345 6789</p>
+                <p class="text-white">
+                    <a href="https://wa.me/50672301848" target="_blank" class="text-white">+506 7230 1848</a>
+                </p>
             </div>
-            <p class="m-0">&copy; <a class="text-primary" href="#">Domain Name</a>. Designed by <a class="text-primary" href="https://htmlcodex.com">HTML Codex</a>
-            </p>
         </div>
     </div>
     <!-- Footer End -->
@@ -464,12 +475,14 @@
       const asistencia = document.querySelector('input[name="asistencia"]:checked')?.value || '';
       const restricciones = document.getElementById('restricciones').value;
       const microbus = document.getElementById('microbus').value;
+      const horamic = document.getElementById('horarioBuseta').value;
   
       const data = {
         nombre,
         asistencia,
         restricciones,
-        microbus
+        microbus,
+        horarioBuseta
       };
   
       fetch('https://script.google.com/macros/s/AKfycbwS1LlmBP5tb50_BaCqXsjv6cF7VTysQzeUWZ58U54f-smvzTf2bbY1BBSqbp1fI1vsiQ/exec', {
@@ -505,6 +518,38 @@
             }
         });
     </script>
+
+    <script>
+        const microbus = document.getElementById('microbus');
+        const horarioBuseta = document.getElementById('horarioBuseta');
+        const horarioBusetaGroup = horarioBuseta.closest('.form-group');
+
+        function toggleHorarioBuseta() {
+            if (microbus.value === 'Sí') {
+                horarioBusetaGroup.style.display = 'block';
+                horarioBuseta.setAttribute('required', 'required');
+            } else {
+                horarioBusetaGroup.style.display = 'none';
+                horarioBuseta.removeAttribute('required');
+                horarioBuseta.value = ''; // Limpiamos el valor si lo ocultamos
+            }
+        }
+
+        microbus.addEventListener('change', toggleHorarioBuseta);
+
+        // Ejecutamos al cargar la página por si ya está preseleccionado
+        toggleHorarioBuseta();
+
+        // Validación extra para que "Seleccioná una opción" no sea válido
+        document.querySelector('form').addEventListener('submit', function (e) {
+            if (microbus.value === 'Sí' && horarioBuseta.value === '') {
+                e.preventDefault();
+                alert('Por favor seleccioná una hora de regreso en la microbús.');
+                horarioBuseta.focus();
+            }
+        });
+    </script>
+
          
 </body>
 
